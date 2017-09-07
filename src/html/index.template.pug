@@ -1,0 +1,27 @@
+- var devMode = self.htmlWebpackPlugin.options.data.DEV_MODE
+- var dateTime = self.htmlWebpackPlugin.options.data.dateTime
+- var title = "title";
+- var description = "description"
+- var image = "img/fb.jpg"
+- var min = devMode ? "" : ".min";
+doctype
+html
+  head
+    meta(charset='UTF-8')
+    title=title
+    link(rel="image_src" type="image/jpeg" href=image)
+    link(rel="shortcut icon" type="image/ico" href="favicon.ico")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no")
+    meta(name="description" content=description)
+    meta(property="og:title" content=title)
+    meta(property="og:description" content=description)
+    meta(property="og:image" content=image)
+  body(class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden")
+    #app
+    script(src=`//cdnjs.cloudflare.com/ajax/libs/device.js/0.2.7/device${min}.js` defer)
+    <link type=text/css href="https://fonts.googleapis.com/css?family=Muli:400,300" rel=stylesheet>
+    <link type=text/css href="https://fonts.googleapis.com/css?family=Montserrat" rel=stylesheet>
+    <link href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet>
+    //- <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/simple-line-icons.css" rel="stylesheet">
+<!-- #{dateTime} -->
