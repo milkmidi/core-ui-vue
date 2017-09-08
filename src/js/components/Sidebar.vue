@@ -41,10 +41,10 @@
   </div>
 </template>
 <script>
-import SidebarNavDropdown from './SidebarNavDropdown';
-import SidebarNavLink from './SidebarNavLink';
-import SidebarNavTitle from './SidebarNavTitle'
-;
+import SidebarNavDropdown from './SidebarNavDropdown.vue';
+import SidebarNavLink from './SidebarNavLink.vue';
+import SidebarNavTitle from './SidebarNavTitle.vue';
+
 export default {
   name: 'sidebar',
   props: {

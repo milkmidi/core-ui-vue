@@ -546,14 +546,14 @@
 </template>
 
 <script>
-import CardLine1ChartExample from './dashboard/CardLine1ChartExample'
-import CardLine2ChartExample from './dashboard/CardLine2ChartExample'
-import CardLine3ChartExample from './dashboard/CardLine3ChartExample'
-import CardBarChartExample from './dashboard/CardBarChartExample'
-import MainChartExample from './dashboard/MainChartExample'
-import SocialBoxChartExample from './dashboard/SocialBoxChartExample'
-import CalloutChartExample from './dashboard/CalloutChartExample'
-import { Callout } from '../components/'
+import CardLine1ChartExample from './dashboard/CardLine1ChartExample.vue';
+import CardLine2ChartExample from './dashboard/CardLine2ChartExample.vue';
+import CardLine3ChartExample from './dashboard/CardLine3ChartExample.vue';
+import CardBarChartExample from './dashboard/CardBarChartExample.vue';
+import MainChartExample from './dashboard/MainChartExample.vue';
+import SocialBoxChartExample from './dashboard/SocialBoxChartExample.vue';
+import CalloutChartExample from './dashboard/CalloutChartExample.vue';
+import { Callout } from '../components/';
 
 export default {
   name: 'dashboard',
@@ -565,9 +565,9 @@ export default {
     CardBarChartExample,
     MainChartExample,
     SocialBoxChartExample,
-    CalloutChartExample
+    CalloutChartExample,
   },
-  data: function () {
+  data() {
     return {
       tableItems: [
         {
@@ -576,7 +576,7 @@ export default {
           country: { name: 'USA', flag: 'static/img/flags/USA.png' },
           usage: { value: 50, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Mastercard', icon: 'fa fa-cc-mastercard' },
-          activity: '10 sec ago'
+          activity: '10 sec ago',
         },
         {
           avatar: { url: 'static/img/avatars/2.jpg', status: 'danger' },
@@ -584,7 +584,7 @@ export default {
           country: { name: 'Brazil', flag: 'static/img/flags/Brazil.png' },
           usage: { value: 22, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Visa', icon: 'fa fa-cc-visa' },
-          activity: '5 minutes ago'
+          activity: '5 minutes ago',
         },
         {
           avatar: { url: 'static/img/avatars/3.jpg', status: 'warning' },
@@ -592,7 +592,7 @@ export default {
           country: { name: 'India', flag: 'static/img/flags/India.png' },
           usage: { value: 74, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Stripe', icon: 'fa fa-cc-stripe' },
-          activity: '1 hour ago'
+          activity: '1 hour ago',
         },
         {
           avatar: { url: 'static/img/avatars/4.jpg', status: '' },
@@ -600,7 +600,7 @@ export default {
           country: { name: 'France', flag: 'static/img/flags/France.png' },
           usage: { value: 98, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'PayPal', icon: 'fa fa-paypal' },
-          activity: 'Last month'
+          activity: 'Last month',
         },
         {
           avatar: { url: 'static/img/avatars/5.jpg', status: 'success' },
@@ -608,7 +608,7 @@ export default {
           country: { name: 'Spain', flag: 'static/img/flags/Spain.png' },
           usage: { value: 22, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Google Wallet', icon: 'fa fa-google-wallet' },
-          activity: 'Last week'
+          activity: 'Last week',
         },
         {
           avatar: { url: 'static/img/avatars/6.jpg', status: 'danger' },
@@ -616,48 +616,48 @@ export default {
           country: { name: 'Poland', flag: 'static/img/flags/Poland.png' },
           usage: { value: 43, period: 'Jun 11, 2015 - Jul 10, 2015' },
           payment: { name: 'Amex', icon: 'fa fa-cc-amex' },
-          activity: 'Last week'
-        }
+          activity: 'Last week',
+        },
       ],
       tableFields: {
         avatar: {
           label: '<i class="icon-people"></i>',
-          class: 'text-center'
+          class: 'text-center',
         },
         user: {
-          label: 'User'
+          label: 'User',
         },
         country: {
           label: 'Country',
-          class: 'text-center'
+          class: 'text-center',
         },
         usage: {
-          label: 'Usage'
+          label: 'Usage',
         },
         payment: {
           label: 'Payment method',
-          class: 'text-center'
+          class: 'text-center',
         },
         activity: {
-          label: 'Activity'
-        }
-      }
-    }
+          label: 'Activity',
+        },
+      },
+    };
   },
   methods: {
-    variant (value) {
-      let $variant
+    variant(value) {
+      let $variant;
       if (value <= 25) {
-        $variant = 'info'
+        $variant = 'info';
       } else if (value > 25 && value <= 50) {
-        $variant = 'success'
+        $variant = 'success';
       } else if (value > 50 && value <= 75) {
-        $variant = 'warning'
+        $variant = 'warning';
       } else if (value > 75 && value <= 100) {
-        $variant = 'danger'
+        $variant = 'danger';
       }
-      return $variant
-    }
-  }
-}
+      return $variant;
+    },
+  },
+};
 </script>

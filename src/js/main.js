@@ -5,10 +5,9 @@ import BootstrapVue from 'bootstrap-vue';
 import App from './App.vue';
 import router from './router';
 
-Vue.use(BootstrapVue);
-
 import '../scss/style.scss';
 
+Vue.use(BootstrapVue);
 
 /* eslint-disable no-new */
 new Vue({

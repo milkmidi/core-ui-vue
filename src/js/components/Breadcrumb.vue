@@ -20,13 +20,14 @@ export default {
       return index === this.list.length - 1;
     },
     showName(item) {
+      let newItem;
       if (item.meta && item.meta.label) {
-        item = item.meta && item.meta.label;
+        newItem = item.meta && item.meta.label;
       }
       if (item.name) {
-        item = item.name;
+        newItem = item.name;
       }
-      return item;
+      return newItem;
     },
   },
 };
