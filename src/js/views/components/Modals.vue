@@ -91,7 +91,7 @@
 <script>
 export default {
   name: 'modals',
-  data () {
+  data() {
     return {
       myModal: false,
       largeModal: false,
@@ -100,8 +100,8 @@ export default {
       successModal: false,
       warningModal: false,
       dangerModal: false,
-      infoModal: false
-    }
-  }
-}
+      infoModal: false,
+    };
+  },
+};
 </script>
