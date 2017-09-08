@@ -41,30 +41,31 @@
   </div>
 </template>
 <script>
-import SidebarNavDropdown from './SidebarNavDropdown'
-import SidebarNavLink from './SidebarNavLink'
+import SidebarNavDropdown from './SidebarNavDropdown';
+import SidebarNavLink from './SidebarNavLink';
 import SidebarNavTitle from './SidebarNavTitle'
+;
 export default {
   name: 'sidebar',
   props: {
     navItems: {
       type: Array,
       required: true,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   components: {
     SidebarNavDropdown,
     SidebarNavLink,
-    SidebarNavTitle
+    SidebarNavTitle,
   },
   methods: {
-    handleClick (e) {
-      e.preventDefault()
-      e.target.parentElement.classList.toggle('open')
-    }
-  }
-}
+    handleClick(e) {
+      e.preventDefault();
+      e.target.parentElement.classList.toggle('open');
+    },
+  },
+};
 </script>
 
 <style lang="css">

@@ -12,22 +12,22 @@ export default {
   props: {
     name: {
       type: String,
-      default: ''
+      default: '',
     },
     url: {
       type: String,
-      default: ''
+      default: '',
     },
     icon: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   methods: {
-    handleClick (e) {
-      e.preventDefault()
-      e.target.parentElement.classList.toggle('open')
-    }
-  }
-}
+    handleClick(e) {
+      e.preventDefault();
+      e.target.parentElement.classList.toggle('open');
+    },
+  },
+};
 </script>

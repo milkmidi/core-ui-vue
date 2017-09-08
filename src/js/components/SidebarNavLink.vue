@@ -11,19 +11,19 @@ export default {
   props: {
     name: {
       type: String,
-      default: ''
+      default: '',
     },
     url: {
       type: String,
-      default: ''
+      default: '',
     },
     icon: {
       type: String,
-      default: ''
+      default: '',
     },
     badge: {
-      default: ''
-    }
-  }
-}
+      default: '',
+    },
+  },
+};
 </script>

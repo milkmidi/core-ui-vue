@@ -219,13 +219,14 @@
 </template>
 
 <script>
-import Callout from './Callout'
+import Callout from './Callout';
 import cSwitch from './Switch'
+;
 export default {
   name: 'aside',
   components: {
     Callout,
-    cSwitch
-  }
-}
+    cSwitch,
+  },
+};
 </script>

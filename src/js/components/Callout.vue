@@ -8,19 +8,19 @@
 export default {
   props: {
     variant: {
-      type: String
-    }
+      type: String,
+    },
   },
   computed: {
-    classList () {
+    classList() {
       return [
         'callout',
-        this.calloutVariant
-      ]
+        this.calloutVariant,
+      ];
     },
-    calloutVariant () {
-      return this.variant ? `callout-${this.variant}` : ''
-    }
-  }
-}
+    calloutVariant() {
+      return this.variant ? `callout-${this.variant}` : '';
+    },
+  },
+};
 </script>

@@ -16,16 +16,16 @@ export default {
   props: {
     name: {
       type: String,
-      default: ''
+      default: '',
     },
     classes: {
       type: String,
-      default: ''
+      default: '',
     },
     wrapper: {
       type: Object,
-      default: () => {}
-    }
-  }
-}
+      default: () => {},
+    },
+  },
+};
 </script>

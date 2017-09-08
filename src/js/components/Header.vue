@@ -45,22 +45,22 @@
 export default {
   name: 'header',
   methods: {
-    sidebarToggle (e) {
-      e.preventDefault()
-      document.body.classList.toggle('sidebar-hidden')
+    sidebarToggle(e) {
+      e.preventDefault();
+      document.body.classList.toggle('sidebar-hidden');
     },
-    sidebarMinimize (e) {
-      e.preventDefault()
-      document.body.classList.toggle('sidebar-minimized')
+    sidebarMinimize(e) {
+      e.preventDefault();
+      document.body.classList.toggle('sidebar-minimized');
     },
-    mobileSidebarToggle (e) {
-      e.preventDefault()
-      document.body.classList.toggle('sidebar-mobile-show')
+    mobileSidebarToggle(e) {
+      e.preventDefault();
+      document.body.classList.toggle('sidebar-mobile-show');
     },
-    asideToggle (e) {
-      e.preventDefault()
-      document.body.classList.toggle('aside-menu-hidden')
-    }
-  }
-}
+    asideToggle(e) {
+      e.preventDefault();
+      document.body.classList.toggle('aside-menu-hidden');
+    },
+  },
+};
 </script>
